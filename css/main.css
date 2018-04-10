@@ -1,0 +1,631 @@
+/* Color Palette, from Coolors.co
+
+Eerie Black (black with reddish overtones): #1A1423
+Grullo (light khaki brown): #A49E8D
+Dark Liver (dark brown): #504136
+Desaturated Cyan (muted pastel green): #689689
+Linen (almost white): #F8F4E3
+Pastel Gray (light tan gray): #D4CDC3
+
+*/
+
+/* General Styles ########################## */
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: #F8F4E3;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+/* Icons Top ########################### */
+
+.icon-top {
+  background: #A49E8D;
+}
+
+.icon-top a {
+  color: #504136;
+  font-size: 25px;
+  transition: color 1s ease-in-out;
+}
+
+.icon-top a:hover {
+  color: #1A1423;
+}
+
+.icon-top h5 {
+  color: #1A1423;
+  transition: color 1s ease-in-out;
+}
+
+.icon-top h5:hover {
+  color: #504136;
+}
+
+/* Navbar ############################# */
+.navbar {
+  background: #689689;
+  padding: 10px 20px;
+  transition: padding 2s ease;
+}
+
+.navbar-background {
+  padding: 2px 20px;
+}
+
+.navbar-brand {
+  color: #1A1423;
+  border: 3px solid #504136;
+  font-size: 30px;
+  transition: all 2s ease;
+}
+
+.navbar-brand:hover {
+  background: #504136;
+  color: #F8F4E3;
+}
+
+.bar-1, .bar-2, .bar-3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  background: #1A1423;
+  transition: all 0.5s ease;
+}
+
+.change .bar-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar-2 {
+  opacity: 0;
+}
+
+.change .bar-3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+.nav-link {
+  color: #504136;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 2s ease;
+}
+
+.nav-link:hover {
+  background: #504136;
+  color: #F8F4E3;
+}
+
+.search-btn {
+  background: #D4CDC3;
+  color: #1A1423;
+  transition: all 1s ease;
+}
+
+.search-btn:hover {
+  background: #A49E8D;
+  color: #F8F4E3;
+}
+
+/* Carousel/Slider ############################ */
+#header .carousel-caption, .banner-btn {
+  color: #1A1423;
+}
+
+.banner-btn {
+  border: 2px solid #504136;
+  transition: all 1s ease;
+  box-shadow: 0 1px 2px #1A1423;
+}
+
+.banner-btn:hover {
+  color: #F8F4E3;
+  background: #504136;
+  transform: translateY(-7px);
+  box-shadow: 0 5px 15px #1A1423;
+}
+
+.item-1, .item-2, .item-3 {
+  min-height: 60vh;
+  /* I'm not sure I like this clip-path below */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+}
+
+.item-1 {
+  /* translated #D4CDC3 to the rgba numbers below */
+  background: linear-gradient(to right, rgba(212, 205, 195, 0.8), rgba(212, 205, 195, 0.4)), url('../images/banner-1.jpeg') center/cover fixed no-repeat;
+  /* code below set with shortcuts above
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+}
+
+.item-2 {
+  background: linear-gradient(to right, rgba(212, 205, 195, 0.8), rgba(212, 205, 195, 0.4)), url('../images/banner-2.jpeg') center/cover fixed no-repeat;
+}
+
+.item-3 {
+  background: linear-gradient(to right, rgba(212, 205, 195, 0.8), rgba(212, 205, 195, 0.4)), url('../images/banner-3.jpeg') center/cover fixed no-repeat;
+}
+
+/* Title ############################# */
+
+.title h1 {
+  color: #1A1423;
+}
+
+.title h3 {
+  color: #504136;
+}
+
+.title-underline {
+  height: 5px;
+  width: 250px;
+  background: #689689;
+  margin: -28px auto 0 auto;
+}
+
+.title a {
+  color: #504136;
+  font-size: 30px;
+  padding: 0 10px;
+  display: inline-block;
+  background: #F8F4E3;
+}
+
+/* Skills Section ########################### */
+.skills-icon {
+  background: #A49E8D;
+  transition: all 1s ease-in-out;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%)
+}
+
+.skills-icon:hover {
+  background: #D4CDC3;
+}
+
+.skills-icon span {
+  color: #504136;
+  font-size: 100px;
+  transition: all 1s ease-in-out;
+}
+
+.skills-icon:hover span {
+  color: #689689;
+}
+
+/* About Section ########################## */
+#about {
+  min-height: 40vh;
+  background: #D4CDC3;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+#video-filler {
+  min-height: 50vh;
+  background: linear-gradient(to right, rgba(164, 158, 141, 0.6), rgba(164, 158, 141, 0.2)), url('../images/video-filler.jpeg') center/cover fixed no-repeat;
+}
+
+#video-filler a {
+  color: #1A1423;
+  font-size: 80px;
+  animation: myAnimation 5s ease infinite;
+}
+
+@keyframes myAnimation {
+  50% {
+    transform: scale(1.3);
+    color: #504136;
+  }
+}
+
+.title a {
+  background: #D4CDC3;
+}
+
+.about-text a {
+  color: #504136;
+  background: #689689;
+  border: 2px solid #504136;
+  transition: all 1s ease;
+  box-shadow: 0 1px 2px #1A1423;
+}
+
+.about-text a:hover {
+  color: #F8F4E3;
+  background: #504136;
+  transform: translateY(-7px);
+  box-shadow: 0 5px 15px #1A1423;
+}
+
+#about .about-progress {
+  min-height: 50vh;
+  background: linear-gradient(to right, rgba(164, 158, 141, 0.8), rgba(164, 158, 141, 0.4)), url('../images/video-filler.jpeg') center/cover fixed no-repeat;
+  outline: 5px solid #504136;
+  outline-offset: 10px;
+}
+
+#about .progress-bar {
+  background: #689689;
+}
+
+/* Projects Section #################### */
+#projects button {
+  background: #689689;
+  color: #504136;
+  transition: all 1s ease-in-out;
+}
+
+#projects button:hover {
+  background: #504136;
+  color: #F8F4E3;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(212, 205, 195, 0.9), rgba(212, 205, 195, 0.9));
+}
+
+.img-container img {
+  opacity: 1;
+  transition: all 2s ease-in-out;
+}
+
+.img-container:hover .project-image {
+  opacity: 0.5;
+  transform: scale(1.3);
+}
+
+.search-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #1A1423;
+  transition: all 1s ease-in-out;
+  margin-top: -50%;
+  opacity: 0;
+}
+
+.img-container:hover .search-link {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.search-link:hover {
+  color: #504136;
+}
+
+/* Current Projects Section ########################## */
+#current-projects {
+  background: #A49E8D;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.current-project-photo {
+  position: relative;
+  min-height: 50vh;
+}
+
+.current-project {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.current-project-1 {
+  top: 0;
+  left: 10%;
+  transform: rotate(-15deg);
+  z-index: 20;
+}
+
+.current-project-2 {
+  top: 0;
+  left: 46%;
+  transform: rotate(8deg);
+  z-index: 30;
+}
+
+.current-project-3 {
+  top: 40%;
+  left: 3%;
+  transform: rotate(-5deg);
+}
+
+.current-project-4 {
+  top: 41%;
+  left: 40%;
+  transform: rotate(38deg);
+}
+
+.current-project:hover {
+  transform: scale(1.1);
+  z-index: 50;
+}
+
+/* Posts Section ######################### */
+#posts .card {
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+#posts .card-img-top {
+  border-radius: 0;
+}
+
+#posts .card-footer {
+  background: transparent;
+}
+
+.post-link {
+  color: #689689;
+  transition: all 1s ease-in-out;
+}
+
+.post-link:hover {
+  color: #1A1423;
+  text-decoration: none;
+}
+
+.corner-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #689689;
+  color: #F8F4E3;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+#posts .card:hover .corner-text {
+  opacity: 1;
+}
+
+/* Contact Form Section ####################### */
+#contact-form {
+  background: linear-gradient(to right, rgba(164, 158, 141, 0.6), rgba(164, 158, 141, 0.2)), url('../images/banner-2.jpeg') center/cover fixed no-repeat;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}
+
+.height-30 {
+  min-height: 30vh;
+}
+
+#contact-form h1 {
+  color: #1A1423;
+}
+
+#contact-form .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #689689;
+  border-radius: 0;
+  color: #504136;
+}
+
+.form-control::placeholder {
+  text-transform: capitalize;
+  color: #504136;
+  font-size: 20px;
+}
+
+#contact-form button {
+  background: transparent;
+  border: 2px solid #504136;
+  color: #504136;
+  border-radius: 0;
+  transition: all 1s ease-in-out;
+}
+
+#contact-form button:hover {
+  background: #689689;
+  color: #F8F4E3;
+}
+
+/* Values Section ######################### */
+.value {
+  position: relative;
+}
+
+.value-icon {
+  font-size: 60px;
+  color: #1A1423;
+  background: #A49E8D;
+  padding: 25px 35px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.value-number {
+  padding: 15px;
+  background: #689689;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 20px;
+  top: -12%;
+  left: 57%;
+  transition: all 1s ease;
+  color: #1A1423;
+}
+
+.value:hover .value-icon {
+  background: #689689;
+  transform: scale(1.2);
+}
+
+.value:hover .value-number {
+  background: #A49E8D;
+  transform: scale(0.9);
+}
+
+/* Team Section ######################### */
+.member-container {
+  position: relative;
+  overflow: hidden;
+  background: #A49E8D;
+}
+
+.team-image {
+  transition: all 1s ease-in-out;
+}
+
+.member-container:hover .team-image {
+  transform: translateY(-72px);
+  opacity: 0.5;
+}
+
+.team-icons a {
+  color: #1A1423;
+  font-size: 25px;
+  transition: all 1s ease;
+}
+
+.team-icons a:hover {
+  color: #F8F4E3;
+}
+
+.member-info {
+  transition: all 1s ease-in-out;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #A49E8D;
+  padding: 10px;
+  margin-bottom: -140px;
+}
+
+.member-container:hover .member-info {
+  margin-bottom: 0;
+}
+
+.member-icon a {
+  font-size: 4rem;
+  color: #1A1423;
+  transition: all 1s ease-in-out;
+}
+
+.member-icon a:hover {
+  color: #F8F4E3;
+}
+
+/* Reviews Section ##################### */
+#reviews {
+  background: linear-gradient(to right, rgba(164, 158, 141, 0.6), rgba(164, 158, 141, 0.2)), url('../images/banner-1.jpeg') center/cover fixed no-repeat;
+  color: #1A1423;
+}
+
+.customer-text h3 {
+  color: #1A1423;
+}
+
+.customer-text h4 {
+  color: #504136;
+}
+
+.customer-text p {
+  line-height: 1.5;
+}
+
+.customer-text span {
+  font-size: 40px;
+  color: #504136;
+}
+
+.ratings {
+  color: #689689;
+}
+
+/* Numbers Section ##################### */
+.number {
+  background: #A49E8D;
+  color: #504136;
+  transition: all 1s ease;
+}
+
+.number:hover {
+  background: #504136;
+  color: #F8F4E3;
+}
+
+/* Contact Section ########################## */
+.height-80 {
+  min-height: 80vh;
+}
+
+#contact {
+  background: linear-gradient(to right, rgba(212, 205, 195, 0.6), rgba(212, 205, 195, 0.2)), url('../images/banner-1.jpeg') center/cover fixed no-repeat;
+}
+
+#contact .card {
+  /* #D4CDC3 translated to rgba */
+  background: rgba(212, 205, 195, 0.5);
+  transition: all 1s ease;
+}
+
+#contact .card:hover {
+  /* #D4CDC3 translated to rgba */
+  background: rgba(212, 205, 195, 0.8);
+}
+
+#contact .card-header {
+  color: #1A1423;
+}
+
+#contact .input-group-text {
+  background: #689689;
+  border-color: #689689;
+  color: #1A1423;
+}
+
+#contact .card input::placeholder {
+  color: #1A1423;
+}
+
+.contact-btn {
+  color: #1A1423;
+  background: #689689;
+  transition: all 1s ease-in-out;
+}
+
+.contact-btn:hover {
+  color: #F8F4E3;
+  background: #504136;
+}
+
+/* Footer ######################## */
+footer {
+  background: #A49E8D;
+}
+
+.footer-icons a {
+  color: #504136;
+  font-size: 25px;
+  transition: color 1s ease-in-out;
+}
+
+.footer-icons a:hover {
+  color: #1A1423;
+}
+
+footer h5 {
+  color: #1A1423;
+  transition: color 1s ease-in-out;
+}
+
+footer h5:hover {
+  color: #504136;
+}
